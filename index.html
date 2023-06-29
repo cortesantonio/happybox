@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>HappyBox Pizza</title>
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="div1">
+        <div class="logo">
+          <a href="#section1"
+            ><img src="img/logo.png" width="120px" alt="HappyBox" />
+          </a>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="#section2">Promociones</a></li>
+            <li><a href="#section3">Catalogo</a></li>
+            <li><a href="#section4">NUESTRO LOCAL</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="div2">
+        <button onclick="openModal()">
+          <i class="fa-regular fa-user"></i> Iniciar Sesion
+        </button>
+      </div>
+    </nav>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <button id="closemodal" onclick="closeModal()">
+          <i class="fa-solid fa-circle" style="color: #a00000"></i>
+        </button>
+        <div class="loginform" id="loginform">
+          <h4>Inicio de Sesion</h4>
+          <form action="">
+            <label for="Email">Email</label>
+            <input type="text" name="Email" id="" />
+            <label for="Contraseña">Contraseña</label>
+            <input type="password" name="Contraseña" id="" />
+            <button  type="submit"> <a href="perfil_usuario.html">Iniciar Sesion</a></button>
+          </form>
+          <button onclick="switchToRegister()">Registrarse</button>
+        </div>
+
+        <div class="registerForm" id="registerForm">
+          <h4>Registro</h4>
+          <form asp-action="RegistrarUsuario" asp-controller="Auth" method="post">
+            <label for="Email">Email</label>
+            <input type="text" required name="Email" id="" />
+            <label for="nombre">Nombre</label>
+            <input type="text" required name="Nombre" id="" />
+            <label for="apellido">Apellido</label>
+            <input type="text" required name="Apellido" id="" />
+            <label for="direccion">Direccion</label>
+            <input type="text" required name="Direccion" id="" />
+            <label for="Contraseña">Contraseña</label>
+            <input type="password" required name="Password" id="" />
+            <button type="submit">Registrarse</button>
+        </form>
+
+          <button onclick="switchToLogin()">Iniciar Sesion</button>
+        </div>
+      </div>
+    </div>
+
+    <section id="section1" class="bienvenida">
+      <div class="titulo">
+        <h1>Escoge tu pizza favorita y saborea la experiencia</h1>
+        <a href="#section2">Pide tu pizza aqui</a>
+      </div>
+    </section>
+
+    <section id="section2" class="promociones">
+      <div class="container">
+        <h2>PROMOS</h2>
+        <hr />
+        <div class="grid" id="promos">
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="section3" class="catalogo">
+      <div class="container">
+        <h2>CATALOGO</h2>
+        <hr />
+        <ul class="categories">
+          <li><a href="#" onclick="showItems(event, 'todo')">TODO</a></li>
+          <li><a href="#" onclick="showItems(event, 'pizza')">PIZZAS</a></li>
+
+          <li>
+            <a href="#" onclick="showItems(event, 'acompañamiento')">ACOMPAÑAMIENTOS</a>
+          </li>
+          <li>
+            <a href="#" onclick="showItems(event, 'dips')">DIPS</a>
+          </li>
+          <li>
+            <a href="#" onclick="showItems(event, 'bebida')">BEBIDAS</a>
+          </li>
+          <li>
+            <a href="#" onclick="showItems(event, 'postre')">POSTRES</a>
+          </li>
+        </ul>
+
+        <div id="itemContainer">
+          
+        </div>
+
+      </div>
+    </section>
+
+    <section id="section4">
+      <div class="container">
+        <h2>NUESTRO LOCAL</h2>
+        <hr />
+        <div class="local">
+          <div class="mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3268.985118582158!2d-71.2382396585543!3d-34.98203747932495!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966457d275deda69%3A0x48fc5842ef413609!2sHappybox%20Pizzas%20Alameda!5e0!3m2!1ses!2scl!4v1687219547437!5m2!1ses!2scl"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="informacion">
+            <h2>HappyBox Pizzas</h2>
+            <p>
+              <i class="fa-solid fa-location-dot"></i> Av. Manso de Velasco 638,
+              Curicó, Maule
+            </p>
+            <p>
+              <i class="fa-solid fa-clock"></i>Lunes a domingo: 12:00 – 23:00
+            </p>
+            <p>
+              <i class="fa-solid fa-phone"></i
+              ><a href="tel:+56 75 2 550872">+56 75 2 550872</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+      <a href=""><i class="fa-regular fa-envelope"></i></a>
+      <div class="img"><img src="img/logo.png" width="140px" alt="" /></div>
+      <a href=""><i class="fa-brands fa-instagram"></i></a>
+      <a href=""><i class="fa-solid fa-phone"></i></a>
+    </footer>
+
+    <aside id="carrito">
+      <div class="container-cart">
+        <h3>Carrito de compras</h3>
+        <table id="container-cart">
+        </table>
+        <div id="resumen">
+          TOTAL DEL PEDIDO: $0
+        </div>
+        <button id="btnPedido">Hacer Pedido</button>
+      </div>
+    </aside>
+
+    <button id="btnCart" onclick="switchCart()">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span id="valueItemCart">0</span>
+    </button>
+  </body>
+  <script src="js/carrito.js"></script>
+</html>

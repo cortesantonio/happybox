@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/admin.css" />
+    <title>Administrador</title>
+  </head>
+  <body>
+    <div id="dayBackground">
+      <div id="day"></div>
+      <div id="time"></div>
+    </div>
+    <nav class="navbar" id="navbar">
+      <div class="div1">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="img/logo.png" width="120px" alt="HappyBox" />
+          </a>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="#">Inicio Dashboard</a></li>
+            <li><a href="#">Adm. Inventario</a></li>
+            <li><a href="#">Ir a pagina principal</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="div2">
+        <button><i class="fa-regular fa-user"></i> Cerrar Sesion</button>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="panel-admin">
+        <aside class="menu-admin">
+          <div class="avatar">
+            <img src="img/avatar.png" alt="" width="150px" />
+          </div>
+          <div class="informacion-ususario">
+            <h2>Antonio Cortes</h2>
+            <p>Administrador</p>
+          </div>
+          <div class="menu">
+            <button onclick="changeView('inicio')">Dashboard</button>
+          </div>
+          <div class="menu">
+            <h3>Panel Estadisticas</h3>
+
+            <button onclick="changeView('ingresos')">Ingresos</button>
+            <button>Egresos</button>
+            <button>Rentabilidad</button>
+          </div>
+          <div class="menu">
+            <h3>Administrador de Usuarios</h3>
+
+            <button>Mi perfil</button>
+            <button>Empleados</button>
+            <button>Analisis de Clientes</button>
+          </div>
+          <div class="menu">
+            <h3>Inventario</h3>
+
+            <button>Administrar Inventario</button>
+            <button>Actualizar Catalogo</button>
+          </div>
+        </aside>
+
+        <section id="inicio">
+          <div class="container-inicio">
+            <canvas class="div1" id="myChart"></canvas>
+
+            <div class="card div2">
+              <p>Ventas</p>
+              <h3>$1.600.000</h3>
+            </div>
+            <div class="card div3">
+              <p>Egresos</p>
+              <h3>$900.000</h3>
+            </div>
+            <div class="card div4">
+              <p>Cantidad de Ventas</p>
+              <h3>43</h3>
+            </div>
+          </div>
+        </section>
+        <section id="ingresos">
+          <h2>Ingresos mes actual</h2>
+          <div class="cantidad-ingresos">
+            <div class="actual">
+              <h3>$1.600.000</h3>
+              <p>MES ACTUAL</p>
+            </div>
+            <div class="anterior">
+              <h3>$3.650.000</h3>
+              <p>Anterior</p>
+            </div>
+          </div>
+          <div class="listado-ingresos">
+            <h3>Ultimos Ingresos</h3>
+
+            <div class="card-ingresos">
+              <div class="id-card">
+                <h4>ID</h4>
+                <p>#1421412</p>
+              </div>
+              <div class="total-card">
+                <h4>TOTAL</h4>
+                <p>$21980</p>
+              </div>
+              <div class="fecha-card">
+                <h4>FECHA</h4>
+                <p>26/06</p>
+              </div>
+              <div class="hora-card">
+                <h4>HORA</h4>
+                <p>12:41</p>
+              </div>
+              <button>VER DETALLE</button>
+            </div>
+
+            <div class="card-ingresos">
+              <div class="id-card">
+                <h4>ID</h4>
+                <p>#1421412</p>
+              </div>
+              <div class="total-card">
+                <h4>TOTAL</h4>
+                <p>$21980</p>
+              </div>
+              <div class="fecha-card">
+                <h4>FECHA</h4>
+                <p>26/06</p>
+              </div>
+              <div class="hora-card">
+                <h4>HORA</h4>
+                <p>12:41</p>
+              </div>
+              <button>VER DETALLE</button>
+            </div>
+
+            <div class="card-ingresos">
+              <div class="id-card">
+                <h4>ID</h4>
+                <p>#1421412</p>
+              </div>
+              <div class="total-card">
+                <h4>TOTAL</h4>
+                <p>$21980</p>
+              </div>
+              <div class="fecha-card">
+                <h4>FECHA</h4>
+                <p>26/06</p>
+              </div>
+              <div class="hora-card">
+                <h4>HORA</h4>
+                <p>12:41</p>
+              </div>
+              <button>VER DETALLE</button>
+            </div>
+          </div>
+        </section>
+
+
+      </div>
+    </div>
+  </body>
+  <script src="js/admin.js"></script>
+</html>

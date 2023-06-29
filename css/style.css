@@ -1,0 +1,493 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    transition: .4s all;
+
+}
+
+
+.navbar .div1 {
+    display: flex;
+    align-items: center;
+}
+
+.links ul li {
+    display: inline;
+    margin-left: 30px;
+    font-size: 1.3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.div2 button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.788);
+    cursor: pointer;
+}
+
+.bienvenida {
+    background-image: url(/img/65802-pizza.jpg);
+    background-position-y: -170px;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.bienvenida .titulo {
+    width: 80%;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo h1 {
+    color: white;
+    font-size: 5rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.534);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo a {
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+    margin: auto;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.titulo a:hover {
+    scale: 105%;
+}
+
+#section2 {
+    width: 100%;
+    padding-top: 120px;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.container h2 {
+    font-size: 2rem;
+    color: black;
+}
+
+hr {
+    margin: 40px 0px 40px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 40px;
+}
+
+
+
+
+.card,
+.cardPromos {
+    width: 300px;
+    height: 300px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.486);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    transition: .4s;
+    padding: 20px;
+}
+
+.card .img img,
+.cardPromos .img img {
+    width: 100%;
+    height: 150px;
+}
+
+.card .precio,
+.cardPromos .precio {
+    margin-top: 50px;
+    font-size: 1.2rem;
+}
+
+
+
+.card button,
+.cardPromos button {
+    background-color: rgb(153, 0, 0);
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    font-size: 1.2rem;
+    bottom: -20px;
+    border: none;
+    left: 75px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.card button:hover,
+.cardPromos button:hover {
+    scale: 105%;
+}
+
+
+#section3 {
+    padding-top: 120px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.categories {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    transition: all .5s;
+    background-color: #30303011;
+}
+
+.categories li {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    transition: all .5s;
+
+}
+
+.categories li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 4px solid transparent;
+    transition: all .5s;
+
+
+    /* Agregamos un borde inferior transparente por defecto */
+}
+
+.categories li a:hover,
+.categories li a.active {
+    /* Agregamos un estilo para la categoría activa */
+    border-bottom-color: #333;
+    font-weight: 900;
+    transform: scale(105%);
+    transition: all .5s;
+
+    /* Cambiamos el color del borde inferior */
+}
+
+#itemContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: start;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+
+#section4 {
+    padding-top: 120px;
+    width: 100%;
+
+}
+
+.local {
+    display: grid;
+    margin: 100px auto;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 80px;
+
+}
+
+.informacion h2 {
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+
+.informacion p,
+.informacion p a {
+    color: black;
+    text-decoration: none;
+}
+
+.informacion p {
+    margin: 5px;
+}
+
+footer {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    color: white;
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+.loginform,
+.registerForm {
+    text-align: center;
+}
+
+.loginform h4,
+.registerForm h4 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.loginform label,
+.registerForm label {
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: #333;
+}
+
+.loginform input,
+.registerForm input {
+    display: block;
+    width: 80%;
+    height: 35px;
+    margin: auto auto 20px;
+    border: 1px solid #33333370;
+}
+
+.loginform form button,
+.registerForm form button {
+    padding: 10px 25px 10px 25px;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.loginform button,
+.registerForm button {
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#closemodal {
+    border: none;
+    font-size: 1rem;
+}
+
+#btnCart {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 1.4rem;
+    border: none;
+    background-color: rgb(102, 0, 0);
+    color: white;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s all;
+}
+
+#btnCart span {
+    position: absolute;
+    font-size: 1rem;
+    color: black;
+    background-color: white;
+    border: 3px solid rgb(102, 0, 0);
+    color: rgb(102, 0, 0);
+    font-weight: bold;
+    border-radius: 50px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    top: -6px;
+    right: -6px
+}
+
+.registerForm {
+    display: none;
+}
+
+.loginform {
+    display: block;
+}
+
+#carrito {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 0px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.644);
+    transition: .5s all;
+    color: rgb(0, 0, 0);
+
+}
+
+.container-cart {
+    width: 90%;
+    margin: 30px auto;
+    text-align: left;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.container-cart table {
+    width: 100%;
+    height: 50px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.container-cart table tr td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.233);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.container-cart table tr td button {
+    font-size: 1.5rem;
+    border: none;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.329);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.container-cart table tr td button:hover {
+    color: rgb(122, 0, 0);
+}
+
+#resumen {
+    display: none;
+    position: absolute;
+    bottom: 95px;
+    right: 35px;
+    width: 80%;
+    font-weight: bold;
+}
+
+.container-cart #btnPedido {
+    display: none;
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+
+    width: 80%;
+    height: 50px;
+    margin-top: 25px;
+    border: 2px solid rgb(122, 0, 0);
+    color: rgb(122, 0, 0);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .5s all;
+}
+
+.container-cart #btnPedido:hover {
+    background-color: rgb(122, 0, 0);
+    color: white;
+}

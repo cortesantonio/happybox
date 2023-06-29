@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/perfil.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Perfil de Usuario - HappyBox</title>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar" style="background-color: black">
+        <div class="div1">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" width="120px" alt="HappyBox" />
+                </a>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="index.html#section2">Promociones</a></li>
+                    <li><a href="index.html#section3">Catalogo</a></li>
+                    <li><a href="index.html#section4">NUESTRO LOCAL</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="div2">
+            <button><i class="fa-regular fa-user"></i> Cerrar Sesion</button>
+        </div>
+    </nav>
+    <div class="container-perfil">
+        <aside class="aside-perfil">
+            <div class="img-user">
+                <img src="img/avatar.png" alt="" />
+            </div>
+            <div class="info-user">
+                <h3>Antonio Cortes</h3>
+                <p>Camino a tutuquen 10</p>
+            </div>
+            <div class="links-user">
+                <button onclick="switchInfo()">Informacion de Usuario</button>
+                <button onclick="switchPedidos()"">Historial de Pedidos</button>
+        </div>
+      </aside>
+
+      <div class=" sections-perfil" id="info">
+                    <h3>Tus Datos Personales</h3>
+                    <div class="container-info">
+                        <label for="">Nombre Completo</label>
+                        <input type="text" name="" value="Antonio Cortes" />
+                        <label for="">RUT</label>
+                        <input type="text" name="" value="12.345.678-9" id="" />
+                        <label for="">Direccion</label>
+                        <input type="text" value="Camino a tutuquen 10" />
+                    </div>
+                    <button>Guardar Cambios</button>
+
+            </div>
+            <div class="sections-perfil" id="pedidos">
+                <h3>Historial de Pedidos</h3>
+                <div class="container-pedidos">
+
+                    <div class="card-pedidos">
+                        <div class="fecha">
+                            <h5>FECHA</h5>
+                            <p>20/03/2023</p>
+                        </div>
+                        <div class="id">
+                            <h5>ID</h5>
+                            <p>#1241433</p>
+                        </div>
+                        <div class="total">
+                            <h5>TOTAL</h5>
+                            <p>$15980</p>
+                        </div>
+                        <button>Ver detalles</button>
+                    </div>
+
+
+                    <div class="card-pedidos">
+                        <div class="fecha">
+                            <h5>FECHA</h5>
+                            <p>20/03/2023</p>
+                        </div>
+                        <div class="id">
+                            <h5>ID</h5>
+                            <p>#1241433</p>
+                        </div>
+                        <div class="total">
+                            <h5>TOTAL</h5>
+                            <p>$15980</p>
+                        </div>
+                        <button>Ver detalles</button>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+</body>
+<script src="js/perfil.js"></script>
+
+</html>
