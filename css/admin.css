@@ -188,11 +188,20 @@ html {
 
 .card h3 {
     font-size: 2.3rem;
-    color: rgba(0, 0, 0, 0.59);
+    color: rgba(0, 0, 0, 0.66);
+}
+.card p {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.66);
+    text-transform: uppercase;
 }
 
 .div1 {
     grid-area: 1 / 1 / 3 / 4;
+}
+.chart-inicio{
+    width: 90%;
+    margin: 50px auto;
 }
 
 .div2 {
@@ -234,14 +243,16 @@ html {
     color: rgba(0, 0, 0, 0.768);
 }
 
-.cantidad-ingresos .actual p .cantidad-egresos .actual p {
+.cantidad-ingresos .actual p,
+.cantidad-egresos .actual p {
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.768);
 }
 
-.cantidad-ingresos .anterior p .cantidad-egresos .anterior p {
+.cantidad-ingresos .anterior p,
+.cantidad-egresos .anterior p {
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -314,7 +325,9 @@ html {
 }
 
 #egresos h2,
-#perfil-propio h2 {
+#perfil-propio h2,
+#empleados h2,
+#finanza h2 {
     margin-top: 50px;
     margin-left: 50px;
     font-size: 2.2rem;
@@ -332,13 +345,147 @@ html {
     color: rgb(55, 55, 55);
 }
 
-#perfil-propio .container-info{
+#perfil-propio {
+    display: none;
+}
+
+#perfil-propio .container-info {
     margin-left: 50px;
     width: 50%;
     margin-top: 50px;
 }
-#perfil-propio .container-info input{
+
+#perfil-propio .container-info label {
     display: block;
-    width: 80%;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+#perfil-propio .container-info input {
+    width: 60%;
     height: 40px;
+    font-size: 1rem;
+    padding: 5px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.552);
+}
+
+#perfil-propio button {
+    display: block;
+    height: 40px;
+    font-size: 1rem;
+    padding: 5px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.552);
+
+}
+
+#empleados {
+    display: none;
+}
+
+#empleados .container-empleados {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.card-empleado {
+    width: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.642);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.card-empleado h4 {
+    color: rgba(0, 0, 0, 0.66);
+}
+
+.card-empleado button {
+    height: 100%;
+    width: 100px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.642);
+    color: white;
+    cursor: pointer;
+}
+
+.container-empleados .btnNewUser {
+    display: block;
+    height: 40px;
+    font-size: 1rem;
+    padding: 5px;
+    font-size: 1rem;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.552);
+    cursor: pointer;
+}
+
+#finanza {
+    display: none;
+}
+
+#finanza .analisis {
+    margin-top: 50px;
+    margin-left: 50px;
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+
+#finanza .analisis .div2 {
+    grid-area: 1 / 3 / 2 / 4;
+
+}
+
+#finanza .analisis .div1 {
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+#finanza .analisis .div1 h3 {
+    font-size: 7rem;
+    color: rgba(0, 0, 0, 0.66);
+
+}
+
+#finanza .analisis .div1 p {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.66);
+}
+
+#finanza .analisis .div3 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+#finanza .analisis .div3 h3,
+#finanza .analisis .div2 h3 {
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.66);
+
+}
+
+#finanza .analisis .div2 p,
+#finanza .analisis .div3 p {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.66);
+}
+
+#finanza .analisis .div2 h3 {
+    color: rgb(150, 206, 150);
+}
+
+#finanza .analisis .div3 h3 {
+    color: rgb(206, 150, 150);
 }
