@@ -156,3 +156,20 @@ function changeView(view) {
     }
     document.getElementById(view).style.display = "block";
 }
+
+estadoJornada = false;
+
+function switchJornada() {
+  var estado =document.getElementById("semaforo-jornada");
+  if(confirm('Esta seguro que quiere cambiar el estado de la jornada?')){
+
+    if (estadoJornada) {
+      estado.innerHTML = '<i class="fa-solid fa-circle" style="color: #c01c28;"></i>'
+      estadoJornada = false;
+  } else{
+      estado.innerHTML = '<i class="fa-solid fa-circle" style="color: #13ff4e;"></i>'
+      estadoJornada = true;
+  }
+  }
+  
+}

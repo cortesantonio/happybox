@@ -156,7 +156,8 @@ html {
 #inicio {
     display: block;
 }
-.container-inicio{
+
+.container-inicio {
     position: relative;
     text-align: center;
 
@@ -165,8 +166,9 @@ html {
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
 }
+
 #inicio canvas {
-    
+
     margin: auto;
 
     max-width: 80%;
@@ -217,7 +219,8 @@ html {
     color: rgba(0, 0, 0, 0.66);
 }
 
-.cantidad-ingresos {
+.cantidad-ingresos,
+.cantidad-egresos {
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -225,40 +228,61 @@ html {
 }
 
 
-.cantidad-ingresos .actual h3 {
+.cantidad-ingresos .actual h3,
+.cantidad-egresos .actual h3 {
     font-size: 7rem;
     color: rgba(0, 0, 0, 0.768);
 }
 
-.cantidad-ingresos .actual p {
+.cantidad-ingresos .actual p .cantidad-egresos .actual p {
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.768);
 }
-.cantidad-ingresos .anterior p{
+
+.cantidad-ingresos .anterior p .cantidad-egresos .anterior p {
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.62);
 }
 
-.cantidad-ingresos .anterior h3 {
+.cantidad-ingresos .anterior h3,
+.cantidad-egresos .anterior h3 {
     font-size: 4rem;
     color: rgba(0, 0, 0, 0.62);
 }
-.listado-ingresos{
+
+.listado-ingresos,
+.listado-egresos {
     margin-top: 75px;
     margin-left: 50px;
 }
-.listado-ingresos h3 {
+
+.listado-egresos .line,
+.listado-ingresos .line {
+    background-color: rgb(123, 123, 123);
+    height: 1px;
+    width: 50%;
+}
+
+.listado-egresos p a,
+.listado-ingresos p a {
+    color: rgb(123, 123, 123);
+    text-decoration: none;
+}
+
+.listado-ingresos h3,
+.listado-egresos h3 {
     font-size: 1.1rem;
     text-transform: uppercase;
     margin-bottom: 20px;
     color: rgba(0, 0, 0, 0.66);
 }
 
-.card-ingresos{
+.card-ingresos,
+.card-egresos {
     width: 50%;
     border: 1px solid rgba(0, 0, 0, 0.642);
     height: 50px;
@@ -268,15 +292,53 @@ html {
     padding-left: 20px;
     margin-bottom: 10px;
 }
-.card-ingresos h4{
+
+.card-ingresos h4,
+.card-egresos h4 {
     color: rgba(0, 0, 0, 0.66);
 
 }
-.card-ingresos button{
+
+.card-ingresos button,
+.card-egresos button {
     height: 100%;
     width: 100px;
     border: none;
     background-color: rgba(0, 0, 0, 0.642);
     color: white;
     cursor: pointer;
+}
+
+#egresos {
+    display: none;
+}
+
+#egresos h2,
+#perfil-propio h2 {
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.66);
+}
+
+.btn-nuevoEgreso button {
+    border: 1px solid rgb(55, 55, 55);
+    background-color: transparent;
+    padding: 10px 30px 10px 30px;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 1.2rem;
+    color: rgb(55, 55, 55);
+}
+
+#perfil-propio .container-info{
+    margin-left: 50px;
+    width: 50%;
+    margin-top: 50px;
+}
+#perfil-propio .container-info input{
+    display: block;
+    width: 80%;
+    height: 40px;
 }
