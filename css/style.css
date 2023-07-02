@@ -64,6 +64,16 @@ html {
     height: 100vh;
 }
 
+@media screen and (min-width: 1980px) {
+    .bienvenida {
+        background-image: url(/img/65802-pizza.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        height: 120vh;
+        width: 100%;
+    }
+}
+
 .bienvenida .titulo {
     width: 80%;
     position: absolute;
@@ -210,7 +220,6 @@ hr {
     transition: all .5s;
 
 
-    /* Agregamos un borde inferior transparente por defecto */
 }
 
 .categories li a:hover,
@@ -221,7 +230,6 @@ hr {
     transform: scale(105%);
     transition: all .5s;
 
-    /* Cambiamos el color del borde inferior */
 }
 
 #itemContainer {
