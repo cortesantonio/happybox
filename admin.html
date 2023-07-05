@@ -71,34 +71,37 @@
 
             <button onclick="changeView('perfil-propio')">Mi perfil</button>
             <button onclick="changeView('empleados')">Empleados</button>
-            <button>Analisis de Clientes</button>
+            <button onclick="changeView('cliente-analisis')">
+              Analisis de Clientes
+            </button>
           </div>
           <div class="menu">
             <h3>Inventario</h3>
 
-            <button>Administrar Inventario</button>
-            <button>Actualizar Catalogo</button>
+            <button onclick="changeView('inventario')">
+              Administrar Inventario
+            </button>
+            <button onclick="changeView('catalogo')">
+              Actualizar Catalogo
+            </button>
           </div>
         </aside>
 
         <section id="inicio">
           <div class="container-inicio">
-            <img src="img/chart2.png" class="div1 chart-inicio" alt="">
+            <img src="img/chart2.png" class="div1 chart-inicio" alt="" />
 
             <div class="card div2">
               <h3>$1.600.000</h3>
               <p>Ventas</p>
-
             </div>
             <div class="card div3">
               <h3>$900.000</h3>
               <p>Egresos</p>
-
             </div>
             <div class="card div4">
               <h3>43</h3>
               <p>Cantidad de Ventas</p>
-
             </div>
           </div>
         </section>
@@ -220,7 +223,7 @@
               <p>Egresos</p>
             </div>
           </div>
-          <img src="img/chart.png"  width="100%" alt="">
+          <img src="img/chart.png" width="100%" alt="" />
         </section>
 
         <section id="perfil-propio">
@@ -259,6 +262,57 @@
             </div>
             <button class="btnNewUser">Agregar Nuevo Miembro</button>
           </div>
+        </section>
+
+        <section id="cliente-analisis">
+          <h2>Analisis de Clientes</h2>
+          <div class="container-clientes-analisis">
+            <img src="img/chart clientes-ventas.png" width="100%" alt="" />
+            <div class="stast-clientes-analisis">
+              <div class="ratio">
+                <h3>5.5</h3>
+                <p>Ratio de Ventas por Cliente</p>
+              </div>
+              <div class="porcentaje">
+                <h3 style="color: rgba(197, 69, 69, 0.616)">-18.52%</h3>
+                <p>Porcentaje de variación nuevos cliente</p>
+              </div>
+              <div class="porcentaje">
+                <h3 style="color: rgba(69, 120, 197, 0.616)">+54.55%</h3>
+                <p>P. proyeccion nuevos cliente</p>
+              </div>
+              <div class="alcance">
+                <h3>7.154</h3>
+                <p>Trafico web ultm. mes</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="inventario">
+          <h2>Administrador de Inventario</h2>
+          <div class="stats">
+            <div class="cantidad">
+              <h3 style="    color: rgba(73, 100, 221, 0.733);
+              ">3</h3>
+              <p>C. productos en inventario</p>
+            </div>
+            <div class="bajoStock">
+              <h3 style="    color: rgba(221, 73, 73, 0.733);
+              ">2</h3>
+              <p>P. bajo stock</p>
+            </div>
+          </div>
+
+          <div id="container-inventario"></div>
+
+          <button class="btnNewElement">Agregar nuevo elemento</button>
+        </section>
+        <section id="catalogo">
+          <h2>Administrador de Catalo</h2>
+          <div id="container-catalogo"></div>
+
+          <button class="btnNewElement">Agregar nuevo elemento</button>
         </section>
       </div>
     </div>

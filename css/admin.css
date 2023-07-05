@@ -190,6 +190,7 @@ html {
     font-size: 2.3rem;
     color: rgba(0, 0, 0, 0.66);
 }
+
 .card p {
     font-size: 1.2rem;
     color: rgba(0, 0, 0, 0.66);
@@ -199,7 +200,8 @@ html {
 .div1 {
     grid-area: 1 / 1 / 3 / 4;
 }
-.chart-inicio{
+
+.chart-inicio {
     width: 90%;
     margin: 50px auto;
 }
@@ -488,4 +490,115 @@ html {
 
 #finanza .analisis .div3 h3 {
     color: rgb(206, 150, 150);
+}
+
+#cliente-analisis {
+    display: none;
+}
+
+#cliente-analisis h2 {
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.66);
+}
+
+.container-clientes-analisis{
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+.ratio h3,
+.porcentaje h3{
+    color: rgba(69, 197, 69, 0.616);
+    font-size: 4rem;
+}
+.ratio p,
+.porcentaje p{
+    color: rgba(0, 0, 0, 0.616);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.stast-clientes-analisis{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.alcance h3{
+    color: rgba(197, 127, 69, 0.616);
+    font-size: 4rem;
+}
+.alcance p{
+    color: rgba(0, 0, 0, 0.616);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+#inventario{
+    display: none;
+}
+#inventario h2 {
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.66);
+}
+
+
+.card-inventario {
+    width: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.642);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.card-inventario h4 {
+    color: rgba(0, 0, 0, 0.66);
+}
+
+.card-inventario button {
+    height: 100%;
+    width: 100px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.642);
+    color: white;
+    cursor: pointer;
+}
+#container-inventario{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+#inventario .btnNewElement {
+    margin-left: 50px;
+    display: block;
+    height: 40px;
+    font-size: 1rem;
+    padding: 5px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.552);
+
+}
+#inventario .stats{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    text-align: center;
+}
+#inventario .stats h3{
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.66);
+}
+#inventario .stats p{
+    color: rgba(0, 0, 0, 0.616);
+    font-size: 1rem;
+    text-transform: uppercase;
 }
