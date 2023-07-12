@@ -12,8 +12,7 @@
     flex-direction: row;
     align-items: center;
 }
-.header .avatar{
-}
+
 .header .avatar img{
     filter: opacity(50%);
 }
@@ -26,6 +25,7 @@
     margin: auto;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 .pedidos-trabajador .grid{
@@ -36,17 +36,49 @@
     gap: 20px;
 
 }
-.pedidos-trabajador .grid .card-pedido{
+#pedidoTomado{
+    width: 110%;
+    margin-top: 20px;
+}
+.tarjeta{
     width: 100%;
-    height: 75px;
-    border: 1px solid rgb(0, 0, 0);
+    height: 20vh;
     padding-left: 10px;
+    text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.76);
+    background-color: rgba(255, 136, 0, 0.418);
 }
-.card-pedido button{
-    background-color: black;
+.tarjeta h3{
+    font-size: 1.3rem;
+    font-weight: bold;
+    
+}
+.tarjeta p{
+    font-size: 1.2rem;
+    margin-right: 50px;
+    margin-left: 20px;
+
+}
+.tarjeta .articulos{
+    text-align: left;
+}
+.pedidos-trabajador .grid .card-pedido{
+    width: 100%;
+    height: 75px;
+    padding: 10px;
+    display: flex;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.329);
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-pedido button,
+.tarjeta button{
+    background-color: rgb(0, 0, 0);
     border: none;
     height: 100%;
     padding: 5px;
