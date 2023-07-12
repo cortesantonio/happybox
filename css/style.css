@@ -45,7 +45,8 @@ html {
     color: white;
 }
 
-.div2 button {
+.div2 button,
+.div2 a {
     background-color: transparent;
     border: none;
     font-size: 1rem;
@@ -58,21 +59,12 @@ html {
 
 .bienvenida {
     background-image: url(/img/65802-pizza.jpg);
-    background-position-y: -170px;
     background-size: cover;
     width: 100%;
     height: 100vh;
 }
 
-@media screen and (min-width: 1980px) {
-    .bienvenida {
-        background-image: url(/img/65802-pizza.jpg);
-        background-repeat: no-repeat;
-        background-size:cover;
-        height: 120vh;
-        width: 100%;
-    }
-}
+
 
 .bienvenida .titulo {
     width: 80%;
@@ -133,6 +125,7 @@ hr {
     justify-content: start;
     align-items: center;
     gap: 40px;
+    margin: auto;
 }
 
 
@@ -140,8 +133,8 @@ hr {
 
 .card,
 .cardPromos {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.486);
     text-align: center;
     display: flex;
@@ -176,7 +169,7 @@ hr {
     font-size: 1.2rem;
     bottom: -20px;
     border: none;
-    left: 75px;
+    left: 50px;
     cursor: pointer;
     transition: .5s;
 }
@@ -276,6 +269,7 @@ hr {
 .informacion p a {
     color: black;
     text-decoration: none;
+
 }
 
 .informacion p {

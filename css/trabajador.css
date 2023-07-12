@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    margin-top:140px ;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.header .avatar{
+}
+.header .avatar img{
+    filter: opacity(50%);
+}
+.info-trabajador h3{
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.58);
+}
+.pedidos-trabajador{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pedidos-trabajador .grid{
+    display: grid;
+    width: 100%;
+    margin-top: 50px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+}
+.pedidos-trabajador .grid .card-pedido{
+    width: 100%;
+    height: 75px;
+    border: 1px solid rgb(0, 0, 0);
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-pedido button{
+    background-color: black;
+    border: none;
+    height: 100%;
+    padding: 5px;
+    color: white;
+    font-size: 1rem;
+}
