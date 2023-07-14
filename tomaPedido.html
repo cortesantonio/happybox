@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/trabajador.css">
+    <link rel="stylesheet" href="css/tomapedido.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+<body>
+
+
+
+
+
+
+    <div id="dayBackground">
+        <div id="day"></div>
+        <div id="time"></div>
+    </div>
+    <nav class="navbar" id="navbar section5">
+        <div class="div1">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" width="120px" alt="HappyBox" />
+                </a>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="/index.html">Ir a pagina principal</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="div2">
+            <a href="index.html"><i class="fa-regular fa-user"></i> Cerrar Sesion</a>
+        </div>
+    </nav>
+    
+
+    <section class="containerTomaPedidos" id="section5">
+        <div class="formulario">
+            <h3>Informacion de Cliente</h3>
+            <form action="">
+                <label for="">Nombre Cliente</label>
+                <input type="text">
+                <label for="">RUT</label>
+                <input type="text" name="" id="">
+                <label for="">Direccion</label>
+                <input type="text" name="" id="">
+                <label for="">Metodo de pago</label>
+                <select name="" id="">
+                    <option value="">Efectivo</option>
+                    <option value="">Debito</option>
+                    <option value="">Credito</option>
+                </select>
+            </form>
+        </div>
+        <div class="promos">
+            <h3 style="font-size: 2rem;">Promos</h3>
+            <div id="promos"></div>
+        </div>
+        <div class="todo">
+            <h3 style="font-size: 2rem;">Catalogo</h3>
+            <div id="itemContainer"></div>
+        </div>
+    </section>
+    <aside id="carrito">
+        <div class="container-cart">
+          <h3>Listado de Pedido</h3>
+          <table id="container-cart">
+          </table>
+          <div id="resumen">
+            TOTAL DEL PEDIDO: $0
+          </div>
+          <button id="btnPedido">Hacer Pedido</button>
+        </div>
+      </aside>
+  
+      <button id="btnCart" onclick="switchCart()">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="valueItemCart">0</span>
+      </button>
+    
+    
+    <script src="js/carrito.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

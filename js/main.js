@@ -22,6 +22,9 @@ window.addEventListener('scroll', function () {
     case 'section4':
       navbar.style.backgroundColor = 'black';
       break;
+    case 'section5':
+      navbar.style.backgroundColor = 'black';
+      break;
     default:
       navbar.style.backgroundColor = 'transparent'; // Color predeterminado
       break;

@@ -74,6 +74,7 @@ const menuPizzeria = [
     imagen: "https://www.los-almendros.com.ar/shop/wp-content/uploads/peperoni_2-1.jpg",
     enPromocion: false
   }
+  
 
 ];
 
